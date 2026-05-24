@@ -6,10 +6,12 @@ import { listCollections } from "@lib/data/collections"
 import { getRegion } from "@lib/data/regions"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: "ZENEIO - Smart Rings",
   description:
-    "A performant frontend ecommerce starter template with Next.js 15 and Medusa.",
+    "ZENEIO Smart Rings - Track your health, sleep, and more.",
 }
+
+export const dynamic = "force-dynamic"
 
 export default async function Home(props: {
   params: Promise<{ countryCode: string }>
