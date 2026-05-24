@@ -10,7 +10,9 @@ type Props = {
   searchParams: Promise<{ v_id?: string }>
 }
 
-export const dynamic = "force-dynamic"(
+export const dynamic = "force-dynamic"
+
+function getImagesForVariant(
   product: HttpTypes.StoreProduct,
   selectedVariantId?: string
 ) {
